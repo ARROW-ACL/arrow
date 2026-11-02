@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARROW · ACL Reconstruction Rehabilitation Outcomes Workgroup</title>
+  <meta name="description" content="ARROW is a multi-site collaboration pooling return-to-sport testing data to improve recovery after ACL reconstruction. Home of DART, the Dashboard for ACL Reconstruction Testing.">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/img/arrow-mark.png" alt="" width="36" height="32">ARROW</a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="./" aria-current="page">About</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="#" data-dart class="ext">DART</a></li>
+          <li><a href="#join">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <img class="hero-logo logo-light" src="assets/img/arrow-logo.png" width="402" height="173" alt="ARROW: ACL Reconstruction Rehabilitation Outcomes Workgroup">
+            <img class="hero-logo logo-dark" src="assets/img/arrow-logo-dark.png" width="402" height="173" alt="ARROW: ACL Reconstruction Rehabilitation Outcomes Workgroup">
+          </div>
+          <div>
+            <h1>Shared data for every step of ACL recovery</h1>
+            <p class="lede">Clinicians and researchers at <span data-site-count>15</span> sites pooling return-to-sport testing data to learn what good recovery after ACL reconstruction looks like.</p>
+          </div>
+        </div>
+
+        <figure class="timeline" aria-label="Recovery timeline from surgery to return to sport">
+          <div class="track" aria-hidden="true">
+            <span class="tick" style="left:0"></span>
+            <span class="tick" style="left:25%"></span>
+            <span class="tick" style="left:50%"></span>
+            <span class="tick" style="left:75%"></span>
+            <span class="shaft"></span>
+            <svg class="tip" viewBox="0 0 44 40"><polyline class="c2" points="6,6 20,20 6,34"/><polyline class="c1" points="22,4 38,20 22,36"/></svg>
+          </div>
+          <div class="timeline-labels" aria-hidden="true">
+            <span style="left:0">Surgery</span>
+            <span class="minor" style="left:25%">3 months</span>
+            <span class="minor" style="left:50%">6 months</span>
+            <span class="minor" style="left:75%">9 months</span>
+            <span class="end" style="left:100%">Return to sport</span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap split">
+        <h2>Why ARROW exists</h2>
+        <div>
+          <p>Before returning to sport after ACL reconstruction, patients are tested on strength, hopping, and how they feel about their knee. Most clinics collect these measures on their own, with too few patients to say what's typical for, say, a 16-year-old with a patellar tendon graft six months after surgery.</p>
+          <p>ARROW pools de-identified testing data from member sites into one registry, now covering <span data-participants>4,000+</span> patients. With numbers at that scale, we can describe recovery by age, sex, graft type, and time since surgery, and give clinicians a fair point of comparison for the patient in front of them.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="goals">
+      <div class="wrap split">
+        <h2>What we work on</h2>
+        <ul class="goals">
+          <li>
+            <h3>A shared registry</h3>
+            <p>Combine return-to-sport testing from clinics and labs across the country using common measures and definitions.</p>
+          </li>
+          <li>
+            <h3>Reference values</h3>
+            <p>Describe expected strength, hop, and patient-reported results for patients like yours, by age, sex, graft source, and time since surgery.</p>
+          </li>
+          <li>
+            <h3>Tools for clinicians</h3>
+            <p>Put the registry to work in clinic through DART, a free dashboard for comparing a patient's results with their peers.</p>
+          </li>
+          <li>
+            <h3>What shapes recovery</h3>
+            <p>Study the factors beyond the knee, like psychological readiness, activity level, and where patients live, that influence outcomes and second injury.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band" id="dart" aria-labelledby="dart-heading">
+      <div class="wrap split">
+        <div>
+          <h2 id="dart-heading">DART</h2>
+          <p class="sub">The Dashboard for ACL Reconstruction Testing</p>
+        </div>
+        <div>
+          <p>Enter a patient's test results and see how they compare with ARROW patients of similar age, sex, graft source, and time since surgery. Print a report to review with your patient. Data you enter isn't stored by the dashboard.</p>
+          <p><a class="button" href="#" data-dart>Open DART</a></p>
+          <p class="meta">Developed by the School of Data Science and the Department of Kinesiology at the University of Virginia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--first" id="sites-section">
+      <div class="wrap split">
+        <div>
+          <h2>Member sites</h2>
+          <p class="lede">Clinics and labs contributing data to ARROW.</p>
+        </div>
+        <div>
+          <div class="map" id="sites-map"></div>
+          <p class="map-note">Select a marker to see the sites in that city. Numbers show cities with more than one site.</p>
+          <ul class="sites" id="sites"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="recent">
+      <div class="wrap split">
+        <div>
+          <h2>Recent publications</h2>
+          <p><a href="publications.html">All publications and abstracts</a></p>
+        </div>
+        <ul class="pubs" id="recent-pubs" data-limit="3"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="join">
+      <div class="wrap split">
+        <h2>Contact ARROW</h2>
+        <div>
+          <p>If your clinic or lab collects return-to-sport testing after ACL reconstruction, we'd like to hear from you. We're always looking to add sites and collaborators.</p>
+          <p><a class="button button--quiet" href="#" data-email="Joining ARROW">Email the ARROW team</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span data-year>2026</span> ARROW, the ACL Reconstruction Rehabilitation Outcomes Workgroup</p>
+      <p><a href="#" data-email></a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/us-map.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
